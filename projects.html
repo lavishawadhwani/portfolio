@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Lavisha Wadhwani</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Fira+Code&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Custom Animation -->
+  <style>
+    @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 0.8s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-all duration-300 font-sans">
+
+  <!-- Navbar -->
+  <nav class="p-4 flex justify-between items-center shadow-md">
+    <h1 class="text-xl font-bold font-['Playfair_Display']">Lavisha</h1>
+    <ul class="flex gap-4 text-sm items-center">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="projects.html" class="hover:underline font-bold text-indigo-600">Projects</a></li>
+      <li><a href="about.html" class="hover:underline">About</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <li>
+        <button id="theme-toggle" class="ml-4 text-xl hover:text-indigo-600 transition">🌗</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="p-10">
+    <h2 class="text-3xl font-bold text-center mb-10 font-['Playfair_Display']">My Projects</h2>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 animate-fade-in-up">
+
+      <!-- Project 1 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition hover:scale-105">
+        <img src="assests/heartdisease.jpg" alt="Heart Disease Predictor" class="rounded-md mb-4 h-40 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Heart Disease Predictor</h3>
+        <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
+          Machine Learning model comparing Logistic Regression, SVM & Random Forest on UCI dataset.
+        </p>
+        <span class="text-sm text-gray-500 italic">Coming Soon</span>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition hover:scale-105">
+        <img src="assests/quiz.webp" alt="Quiz App" class="rounded-md mb-4 h-40 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Quiz App in Python</h3>
+        <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
+          CLI-based Python quiz app that tests users on random topics with instant scoring.
+        </p>
+        <span class="text-sm text-gray-500 italic">Code available on request</span>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition hover:scale-105">
+        <img src="assests/collegetips.webp" alt="CollegeTips Gallery" class="rounded-md mb-4 h-40 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">CollegeTips Photo Gallery</h3>
+        <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
+          Pinterest-style image gallery built with HTML, Tailwind CSS, and JavaScript filtering.
+        </p>
+        <div class="flex gap-4 text-sm">
+          <a href="https://683403f50b969f2d658780ec--bright-kringle-9dc54d.netlify.app/" class="text-indigo-600 underline" target="_blank">Live Demo</a>
+          <a href="https://github.com/lavishawadhwani/collegetips" class="text-indigo-600 underline" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="text-center p-8 bg-gray-100 dark:bg-gray-800 mt-12">
+    <p class="text-xl font-semibold text-gray-800 dark:text-gray-100">Let’s Connect</p>
+    <p class="mb-4 text-sm text-gray-700 dark:text-gray-300">Open to internships, collaborations, and coffee convos ☕</p>
+    <div class="flex justify-center gap-6 text-indigo-600 text-sm">
+      <a href="https://github.com/lavishawadhwani/" target="_blank" class="hover:underline">GitHub</a>
+      <a href="https://linkedin.com/in/lavisha-wadhwani-914590309/" target="_blank" class="hover:underline">LinkedIn</a>
+      <a href="mailto:lavishawadhwani24@gmail.com" class="hover:underline">Email</a>
+    </div>
+  </footer>
+
+  <!-- Light/Dark Mode Toggle Script -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark');
+    }
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
