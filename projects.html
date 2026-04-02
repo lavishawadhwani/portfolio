@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Lavisha Wadhwani</title>
 
-  <!-- Tailwind CSS -->
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,13 +13,13 @@
     };
   </script>
 
-  <!-- Google Fonts -->
+   
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Fira+Code&display=swap" rel="stylesheet" />
 
-  <!-- External CSS -->
+   
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Custom Animation -->
+   
   <style>
     @keyframes fade-in-up {
       0% {
@@ -36,10 +36,9 @@
     }
   </style>
 </head>
+<div class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-all duration-300 font-sans">
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-all duration-300 font-sans">
-
-  <!-- Navbar -->
+  
   <nav class="p-4 flex justify-between items-center shadow-md">
     <h1 class="text-xl font-bold font-['Playfair_Display']">Lavisha</h1>
     <ul class="flex gap-4 text-sm items-center">
@@ -53,8 +52,8 @@
     </ul>
   </nav>
 
-  <!-- Projects Section -->
-  <section class="p-10">
+   
+  <div class="p-10">
     <h2 class="text-3xl font-bold text-center mb-10 font-['Playfair_Display']">My Projects</h2>
      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 animate-fade-in-up">
 
@@ -71,9 +70,14 @@
   <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
     NLP-based Machine Learning web app that classifies news articles as Fake or Real using TF-IDF and Logistic Regression.
   </p>
-
+  <div class="flex flex-wrap gap-2 mb-4">
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">NLP</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">ML</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">TF-IDF</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Logistic Regression</span>
+</div>
   <div class="flex gap-4 text-sm">
-    <a href="https://fake-news-detector-1-vwwj.onrender.com" class="text-indigo-600 underline" target="_blank">Live Demo</a>
+     
     <a href="https://github.com/lavishawadhwani/fake-news-detector" class="text-indigo-600 underline" target="_blank">GitHub</a>
   </div>
 </div>
@@ -91,28 +95,78 @@
   <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
     Full-stack web application where users can post products, browse listings, and connect with buyers. Built with HTML, CSS, JavaScript & backend integration.
   </p>
-
+  <div class="flex flex-wrap gap-2 mb-4">
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Python</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Django</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">HTML and CSS</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">JavaScript</span>
+</div>
   <div class="flex gap-4 text-sm">
-    <a href="https://lavishawadhwani.github.io/campus-exchange" class="text-indigo-600 underline" target="_blank">Live Demo</a>
+     
     <a href="https://github.com/lavishawadhwani/campus-exchange" class="text-indigo-600 underline" target="_blank">GitHub</a>
   </div>
 </div>
 
       <!-- Project 3 -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition hover:scale-105">
+        <img src="assests/tax.webp" alt="Tax DL" class="rounded-md mb-4 h-40 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">AI-Based Tax Filing Validation & Risk Detection System </h3>
+        <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
+          Built a hybrid ML and rule-based system using synthetic labeled datasets to detect tax inconsistencies with >90% accuracy.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">DL</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">ML</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Risk score</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Explainablity</span>
+</div>
+        <div class="flex gap-4 text-sm">
+           
+          <a href="https://github.com/lavishawadhwani/tax-ai-system" class="text-indigo-600 underline" target="_blank">GitHub</a>
+        </div>
+      </div>
+    
+  <!-- Project 4 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition hover:scale-105">
+        <img src="assests/cs.webp" alt="risk auditor" class="rounded-md mb-4 h-40 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">AI-Powered Data Privacy Risk Auditor  </h3>
+        <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
+          Built a hybrid NLP pipeline combining keyword detection and MiniLM semantic embeddings to classify AI-related data privacy risks into LOW / MEDIUM / HIGH categories
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">NLP</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Cyber Security</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">MiniLM</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">Explainablity</span>
+</div>
+        <div class="flex gap-4 text-sm">
+           
+          <a href="https://github.com/lavishawadhwani/riskauditor" class="text-indigo-600 underline" target="_blank">GitHub</a>
+        </div>
+      </div>
+    
+
+  <!-- Project 5-->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition hover:scale-105">
         <img src="assests/collegetips.webp" alt="CollegeTips Gallery" class="rounded-md mb-4 h-40 w-full object-cover">
         <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">CollegeTips Photo Gallery</h3>
         <p class="text-sm mb-4 text-gray-700 dark:text-gray-300">
           Pinterest-style image gallery built with HTML, Tailwind CSS, and JavaScript filtering.
         </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">HTML</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">CSS</span>
+  <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded-md">JavaScript</span>
+   
+</div>
         <div class="flex gap-4 text-sm">
-          <a href="https://683403f50b969f2d658780ec--bright-kringle-9dc54d.netlify.app/" class="text-indigo-600 underline" target="_blank">Live Demo</a>
+           
           <a href="https://github.com/lavishawadhwani/collegetips" class="text-indigo-600 underline" target="_blank">GitHub</a>
         </div>
       </div>
 
     </div>
-  </section>
+  
 
   <!-- Footer -->
   <footer id="contact" class="text-center p-8 bg-gray-100 dark:bg-gray-800 mt-12">
